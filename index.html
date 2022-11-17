@@ -37,105 +37,62 @@
 <body>
 
   <!-- ======= Navbar ======= -->
-  <div class="collapse navbar-collapse custom-navmenu" id="main-navbar">
-    <div class="container py-2 py-md-5">
-      <div class="row align-items-start">
-        <div class="col-md-2">
-          <ul class="custom-menu">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="https://cinqqqqq.substack.com/" target="_blank">Join Us</a></li>
-            <div class="container">
-      </div>
-          </ul>
-        </div>
-        <div class="col-md-4 d-none d-md-block">
-          <h2>✨新功能即將推出!</h2>
-          <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfH492qSRUdxlFvl-BaXkZiw-p0_H_VUBhtA8vVm2kzaXZQJA/viewform" target="_blank">讓我們知道我們在做什麼。</a><br> 
-          謝謝您的意見！</p>
-        </div>
-      </div>
+  <header id="header" class="fixed-top header-inner-pages">
+    <div class="container d-flex align-items-center justify-content-between" id="navtitle">
 
-    </div>
-  </div>
+      <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+      <!-- Uncomment below if you prefer to use an text logo -->
+      <!-- <h1 class="logo"><a href="index.html">Folio</a></h1> -->
 
-  <nav class="navbar navbar-light custom-navbar">
-    <div class="container" id="navtitle">
-      <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" width="40" height="40"></a>
-      <a class="navbar-brand" href="index.html">看、選、出發</a>
-      <a href="#" class="burger" data-bs-toggle="collapse" data-bs-target="#main-navbar">
-        <span></span>
-      </a>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="bio.html" target="_blank">about  關於</a></li>
+          <li><a class="nav-link scrollto" href="#journal">join  加入</a></li>
+          <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSe7sdtSkTlanQLplla9tvJLasiIjtIzg_zu5QyDmtFFZM0knw/viewform" target="_blank"class="btn">feedback 反饋</a></li>
+        </ul>
+
+      </nav><!-- .navbar -->
     </div>
-  </nav>
+  </header><!-- End Header -->
+ 
+
+
 
   <main id="main">
-
-  
 
     <!-- ======= Works Section ======= -->
     <section class="section site-portfolio">
       <div id="portfolio" class="container">
-        <div class="row mb-3 align-items-center">
-          <div class="col-md-12 col-lg-8 mb-4 mb-lg-0" data-aos="fade-up">
-            <h1>你好，一起吃飯吧!</h1>
-            <div class="mb-3 mt-3" data-aos="fade-up" data-aos-delay="100">
-            <div id="filters" class="filters">
-              <a href="#" data-filter="*" class="active">📍 台北</a>
-              <a href="#" data-filter=".taiwanese">🇹🇼 台式</a>
-              <a href="#" data-filter=".stirfry">🥡 熱炒</a>
-              <a href="#" data-filter=".hotpot">🍲 火鍋</a>
-              <a href="#" data-filter=".japanese">🇯🇵 日式</a>
-              <a href="#" data-filter=".izakaya">🍶 居酒屋</a>
-              <a href="#" data-filter=".thai">🇹🇭泰式</a>
-              <a href="#" data-filter=".brunch">🍳 美式早午餐</a>
-              <a href="#" data-filter=".bistro">🍖 餐酒館</a>
-            </div>
+        <div class="row mb-1 align-items-center">
+          <div class="col12" data-aos="fade-up">
+            <h1>嗨~ 今天一起吃什麼?</h1>
+
+
+              <div class="col-12" data-aos="fade-up" data-aos-delay="100">
+                <div id="filters" class="filters">
+                  <a href="#" data-filter="*" class="active">📍 台北全部</a>
+                  <a href="#" data-filter=".stirfry">🥡 熱炒</a>
+                  <a href="#" data-filter=".hotpot">🍲 火鍋</a>
+                  <a href="#" data-filter=".bistro">🥩 燒烤</a>
+                  <a href="#" data-filter=".hotpot">🍳 美式早午餐</a>
+                  <a href="#" data-filter=".izakaya">🍶 居酒屋</a>
+                  <a href="#" data-filter=".bistro">🍖 餐酒館</a>
+                  <a href="#" data-filter=".bistro">💕 可愛の</a>
+                  
+                </div>
+              </div>
+            </div>       
           </div>
-          </div>
-          
-        </div>
         <div id="portfolio-grid" class="row no-gutter" data-aos="fade-up" data-aos-delay="200">
-          <div class="item stirfry col-sm-6 col-md-4 col-lg-3 mb-4">
-            <a href="https://achingfoodie.tw/aren/" target="_blank" class="item-wrap fancybox">
+          <div class="item stirfry col-6 col-md-4">
+            <a href="duodaily.html" target="_blank" class="item-wrap fancybox">
               <div>
                 <img class="img-fluid" src="assets/img/food/rice.jpeg">
                 <h2>阿仁炒飯</h2>
               </div>
             </a>
           </div>
-          <div class="item stirfry col-sm-6 col-md-4 col-lg-3 mb-4">
-            <a href="https://banbi.tw/wuliushou-yakitori/" target="_blank" class="item-wrap fancybox">
-              <div>
-                <img class="img-fluid" src="assets/img/food/izakaya1.webp">
-                <h2>吳留手串燒居酒屋</h2>
-              </div>
-            </a>
-          </div>
-          <div class="item hotpot col-sm-6 col-md-4 col-lg-3 mb-4">
-            <a href="https://coca-hotpot.com/" target="_blank" class="item-wrap fancybox">
-              <div>
-                <img class="img-fluid" src="assets/img/food/hotpot1.jpeg">
-                <h2>COCA泰式火鍋</h2>
-              </div>
-            </a>
-          </div>
-          <div class="item thai col-sm-6 col-md-4 col-lg-3 mb-4">
-            <a href="https://nara.com.tw/" target="_blank" class="item-wrap fancybox">
-              <div>
-                <img class="img-fluid" src="assets/img/food/thai1.jpeg">
-                <h2>Nara Thai Cuisine</h2>
-              </div>
-            </a>
-          </div>
-          <div class="item japanese col-sm-6 col-md-4 col-lg-3 mb-4">
-            <a href="https://foodieteller.com/addition-seafood/" target="_blank" class="item-wrap fancybox">
-              <div>
-                <img class="img-fluid" src="assets/img/food/omakase2.jpg">
-                <h2>上引水產</h2>
-              </div>
-            </a>
-          </div>
-           <div class="item brunch col-sm-6 col-md-4 col-lg-3 mb-4">
+          <div class="item brunch col-6 col-md-4">
             <a href="https://acmetaipei.com/pages/acme-cafe-bar-restaurant-taipei-performing-arts-center" target="_blank" class="item-wrap fancybox">
               <div>
                 <img class="img-fluid" src="assets/img/food/brunch1.jpeg">
@@ -143,7 +100,39 @@
               </div>
             </a>
           </div>
-          <div class="item bistro col-sm-6 col-md-4 col-lg-3 mb-4">
+          <div class="item hotpot col-6 col-md-4">
+            <a href="https://coca-hotpot.com/" target="_blank" class="item-wrap fancybox">
+              <div>
+                <img class="img-fluid" src="assets/img/food/hotpot1.jpeg">
+                <h2>COCA泰式火鍋</h2>
+              </div>
+            </a>
+          </div>
+          <div class="item thai col-6 col-md-4">
+            <a href="https://nara.com.tw/" target="_blank" class="item-wrap fancybox">
+              <div>
+                <img class="img-fluid" src="assets/img/food/thai1.jpeg">
+                <h2>Nara Thai Cuisine</h2>
+              </div>
+            </a>
+          </div>
+          <div class="item japanese col-6 col-md-4">
+            <a href="https://foodieteller.com/addition-seafood/" target="_blank" class="item-wrap fancybox">
+              <div>
+                <img class="img-fluid" src="assets/img/food/omakase2.jpg">
+                <h2>上引水產</h2>
+              </div>
+            </a>
+          </div>
+          <div class="item stirfry col-6 col-md-4">
+            <a href="https://banbi.tw/wuliushou-yakitori/" target="_blank" class="item-wrap fancybox">
+              <div>
+                <img class="img-fluid" src="assets/img/food/izakaya1.webp">
+                <h2>吳留手串燒居酒屋</h2>
+              </div>
+            </a>
+          </div>
+          <div class="item bistro col-6 col-md-4">
             <a href="https://tenjo.tw/piccolopolpobistro/" target="_blank" class="item-wrap fancybox">
               <div>
                 <img class="img-fluid" src="assets/img/food/bistro2.webp">
@@ -151,7 +140,7 @@
               </div>
             </a>
           </div>
-          <div class="item brunch col-sm-6 col-md-4 col-lg-3 mb-4">
+          <div class="item brunch col-6 col-md-4">
             <a href="https://www.tiffany0118.com/brun/" target="_blank" class="item-wrap fancybox">
               <div>
                 <img class="img-fluid" src="assets/img/food/brunch2.jpeg">
@@ -159,7 +148,7 @@
               </div>
             </a>
           </div>
-          <div class="item thai col-sm-6 col-md-4 col-lg-3 mb-4">
+          <div class="item thai col-6 col-md-4">
             <a href="https://www.sheratongrandtaipei.com/websev?lang=zh-tw&ref=pages&cat=2&id=20" target="_blank" class="item-wrap fancybox">
               <div>
                 <img class="img-fluid" src="assets/img/food/thai2.jpeg">
@@ -167,7 +156,7 @@
               </div>
             </a>
           </div>
-          <div class="item japanese col-sm-6 col-md-4 col-lg-3 mb-4">
+          <div class="item japanese col-6 col-md-4">
             <a href="https://tsujihan.kingoshou.com/" target="_blank" class="item-wrap fancybox">
               <div>
                 <img class="img-fluid" src="assets/img/food/japanese2.png">
@@ -175,7 +164,7 @@
               </div>
             </a>
           </div>
-           <div class="item hotpot col-sm-6 col-md-4 col-lg-3 mb-4">
+           <div class="item hotpot col-6 col-md-4">
             <a href="https://tenjo.tw/meatboss/" target="_blank" class="item-wrap fancybox">
               <div>
                 <img class="img-fluid" src="assets/img/food/hotpot3.jpeg">
@@ -183,7 +172,7 @@
               </div>
             </a>
           </div>
-          <div class="item brunch col-sm-6 col-md-4 col-lg-3 mb-4">
+          <div class="item brunch col-6 col-md-4">
             <a href="https://danielfooddiary.com/2017/07/26/tamedfox/" target="_blank" class="item-wrap fancybox">
               <div>
                 <img class="img-fluid" src="assets/img/food/brunch3.jpeg">
@@ -191,7 +180,7 @@
               </div>
             </a>
           </div>
-          <div class="item taiwanese col-sm-6 col-md-4 col-lg-3 mb-4">
+          <div class="item taiwanese col-6 col-md-4">
             <a href="https://margaret.tw/post-44596972/" target="_blank" class="item-wrap fancybox">
               <div>
                 <img class="img-fluid" src="assets/img/food/taiwanese1.jpeg">
@@ -199,7 +188,7 @@
               </div>
             </a>
           </div>
-          <div class="item izakaya col-sm-6 col-md-4 col-lg-3 mb-4">
+          <div class="item izakaya col-6 col-md-4">
             <a href="https://followspent.com/hwa-tze-xun/" target="_blank" class="item-wrap fancybox">
               <div>
                 <img class="img-fluid" src="assets/img/food/izakaya2.jpeg">
@@ -207,7 +196,7 @@
               </div>
             </a>
           </div>
-          <div class="item bistro col-sm-6 col-md-4 col-lg-3 mb-4">
+          <div class="item bistro col-6 col-md-4">
             <a href="https://paulyear.com/woo-taiwan/" target="_blank" class="item-wrap fancybox">
               <div>
                 <img class="img-fluid" src="assets/img/food/bistro1.jpeg">
@@ -215,7 +204,7 @@
               </div>
             </a>
           </div>
-          <div class="item taiwanese col-sm-6 col-md-4 col-lg-3 mb-4">
+          <div class="item taiwanese col-6 col-md-4">
             <a href="https://blog.xuite.net/maomi/Food01/304583722" target="_blank" class="item-wrap fancybox">
               <div>
                 <img class="img-fluid" src="assets/img/food/taiwanese3.jpeg">
@@ -223,7 +212,7 @@
               </div>
             </a>
           </div>
-          <div class="item japanese col-sm-6 col-md-4 col-lg-3 mb-4">
+          <div class="item japanese col-6 col-md-4">
             <a href="https://www.tendon.kingoshou.com/" target="_blank" class="item-wrap fancybox">
               <div>
                 <img class="img-fluid" src="assets/img/food/japanese4.jpeg">
@@ -241,14 +230,13 @@
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <footer class="footer" role="contentinfo">
+    <footer class="footer" role="contentinfo">
     <div class="container">
-        <div class="justify-content-center">
-          <div class="col-md-4 d-none d-md-block">
-          <h2>✨新功能即將推出!</h2>
-          <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfH492qSRUdxlFvl-BaXkZiw-p0_H_VUBhtA8vVm2kzaXZQJA/viewform" target="_blank">讓我們知道我們在做什麼。</a><br> 
-          謝謝您的意見！</p>
-          <a href="https://cinqqqqq.substack.com/" target="_blank">加入我們</a>
+        <div class="social d-flex justify-content-center">
+          <a href="https://medium.com/@hotasspepper" target="_blank"><span class="bi bi-twitter"></span></a>
+          <a href="https://github.com/michellelucywang" target="_blank"><span class="bi bi-instagram"></span></a>
+          <a href="https://www.linkedin.com/in/michellelucywang/" target="_blank"><span class="bi bi-facebook"></span></a>
+          <a href="https://www.linkedin.com/in/michellelucywang/" target="_blank"><span class="bi bi-line"></span></a>
         </div>
       </div>
     </div>
@@ -265,6 +253,25 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
 
 </body>
 

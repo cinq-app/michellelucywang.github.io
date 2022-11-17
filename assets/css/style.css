@@ -18,9 +18,8 @@ a:link {
   text-decoration: none;
 }
 a:hover {
-  color: #59C3FF;
+  color: #F94116;
   background-color: transparent;
-  text-decoration: underline;
 }
 
 h1, h2, h3, h4, h5, h6, .font-heading {
@@ -30,43 +29,119 @@ h1, h2, h3, h4, h5, h6, .font-heading {
 
 h1 {
   font-family: Readex Pro;
-  font-weight: bold;
+  font-weight: semi-bold;
   font-style: normal;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 35px;
-  padding-top: 5px;
+  padding-bottom: 3px;
   color: black;
 }
 h2 {
   font-family: Readex Pro;
   font-style: normal;
-  font-size: 16px;
-  line-height: 35px;
-  padding-top: 2px;
+  font-size: 20px;
+  line-height: 20px;
+  padding-top: 10px;
   color: black;
 }
 h3 {
-  font-family: Dm Sans;
+  font-family: Readex Pro;
   font-style: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: black;
+}
+p {
+  font-family: Helvetica;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 16px;
+  color: black;
+  margin-top: 5px;
+}
+::-moz-selection {
+  background: #FDF0F3;
+  color: #FD8A6F;
+}
+
+::selection {
+  background: #FDF0F3;
+  color: #FD8A6F;
+}
+.button {
+  background-color: pink;
+  color: black;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  border: gray;
+  text-align: center;
+  outline: none;
+  font-size: 16px;
+}
+.collapsible {
+  background-color: lightgrey;
+  color: black;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
   font-size: 20px;
-  line-height: 27px;
-  color: #1453A3;
+}
+
+.active, .collapsible:hover {
+  background-color: pink;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: grey;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content{
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
 }
 
 .section {
-  padding: 7rem 0;
+  padding: 10rem 0;
 }
 
+.section .restaurant{
+  padding: 3rem 0;
+}
+
+
 .filters a {
+  background-color: #f1f1f1;
+  border: none;
+  font-size: 15px;
+  color: grey;
+  padding: 8px 15px;
+  text-align: center;
   text-decoration: none;
-  color: #000;
   display: inline-block;
-  padding-left: 10px;
-  padding-right: 10px;
+  margin: 5px 2px;
+  cursor: pointer;
+  border-radius: 23px;
   position: relative;
 }
 .filters a:hover, .filters a:focus, .filters a:active {
-  text-decoration: none;
+  background-color: #FBF1F3;
 }
 .filters a:hover:before {
   content: "";
@@ -78,7 +153,8 @@ h3 {
   background-color: #000;
 }
 .filters a.active {
-  color: #000;
+  background-color: #FD8A6F;
+  color: white;
 }
 .filters a.active:before {
   content: "";
@@ -89,10 +165,23 @@ h3 {
   height: 1px;
   background-color: #000;
 }
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
 
 .item {
   border: none;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 .item .item-wrap {
   display: block;
@@ -133,7 +222,7 @@ h3 {
   font-style: Readex Pro;
   color:  #fff;
   font-size: 25px;
-  margin-bottom: 0;
+  margin-top: 20ox;
 }
 .item .item-wrap > .work-info span {
   font-size: 14px;
@@ -200,24 +289,24 @@ h3 {
   font-size: 28px;
 }
 
-.readmore {
+.location {
   display: inline-block;
   border: 1px solid #000;
   border-radius: 5px;
   padding: 10px 15px;
-  font-size: 12px;
+  font-size: 16px;
   text-transform: uppercase;
   color: black;
   transition: 0.2s all ease;
   font-weight: 700;
 }
-.readmore a{
+.location a{
   color: #000;
 }
-.readmore:active, .readmore:focus, .readmore:hover {
+.location:active, .location:focus, .location:hover {
   outline: none;
 }
-.readmore:hover {
+.location:hover {
   color: #fff;
   text-decoration: none;
   background: #000;
@@ -290,6 +379,80 @@ h3 {
 }
 * {
   box-sizing: border-box;
+}
+/* Tabs */
+/* Style the tab */
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #EDEDED;
+  color: black;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 50%;
+}
+
+.tablink:hover {
+  background-color: #E7E7E7;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 20px 10px;
+  height: 100%;
+}
+
+#Items {background-color: #F6F6F6;}
+#Blogs {background-color: #F6F6F6;}
+#Contact {background-color: blue;}
+#About {background-color: orange;}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -2px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: ;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 800px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  padding: 10px;
+  text-align: left;
+  background-color: #f1f1f1;
+  width: 100%;
 }
 
 /* Clearfix (clear floats) */
@@ -390,6 +553,112 @@ h3 {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 15px 0;
+  background-color: #fff;
+  top: -100%;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
+}
+
+#header.header-scrolled, #header.header-inner-pages {
+  top: 0;
+}
+
+#header .logo {
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-family: "Playfair Display", sans-serif;
+  font-style: italic;
+}
+
+#header .logo a {
+  color: #898989;
+}
+
+#header .logo img {
+  max-height: 40px;
+}
+
+@media (max-width: 992px) {
+  #header {
+    border: 0;
+  }
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/**
+* Desktop Navigation 
+*/
+.navbar {
+  padding: 0;
+}
+
+.navbar ul {
+  margin: 0;
+  padding-right: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar a, .navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 30px;
+  font-family: "DM Sans";
+  font-size: 18px;
+  font-weight: 500;
+  color: #7e7d7d;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+.navbar a i, .navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+
+.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+  color: #F94116;
+}
+
+.navbar .btn {
+  background: #F94116;
+  border: medium none;
+  border-radius: 7px;
+  color: #fff;
+  font-size: 15px;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+  margin-left: 30px;
+}
+
+
+
+.navbar .btn:hover, .btn:focus {
+  background: #FD8A6F;
+  color: #fff;
+}
+
+
 /* Custom Navmenu */
 .custom-navmenu {
   background: #D2DAE1;
@@ -411,7 +680,7 @@ h3 {
   text-decoration: none;
 }
 .custom-navmenu .custom-menu li.active a {
-  text-decoration: underline;
+  text-decoration: none;
 }
 .custom-navmenu h3 {
   font-size: 20px;
@@ -575,5 +844,5 @@ ul.breadcrumb li a:hover {
   transform: translate(-50%, -50%);
 }
 .social a:hover {
-  color: #0096EB;
+  color: #F94116;
 }
